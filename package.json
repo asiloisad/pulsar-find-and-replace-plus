@@ -27,7 +27,7 @@
       "find-and-replace:clear-history"
     ]
   },
-  "repository": "https://github.com/pulsar-edit/find-and-replace",
+  "repository": "https://github.com/asiloisad/find-and-replace-plus",
   "engines": {
     "atom": "*"
   },
@@ -56,7 +56,7 @@
   },
   "providedServices": {
     "find-and-replace": {
-      "description": "Atom's bundled find-and-replace package",
+      "description": "Pulsar's bundled find-and-replace-plus package",
       "versions": {
         "0.0.1": "provideService"
       }
@@ -70,11 +70,13 @@
   },
   "configSchema": {
     "focusEditorAfterSearch": {
+      "order": 1,
       "type": "boolean",
       "default": false,
       "description": "Focus the editor and select the next match when a file search is executed. If no matches are found, the editor will not be focused."
     },
     "projectSearchResultsPaneSplitDirection": {
+      "order": 2,
       "type": "string",
       "default": "none",
       "enum": [
@@ -86,60 +88,70 @@
       "description": "Direction to split the active pane when showing project search results. If 'none', the results will be shown in the active pane."
     },
     "closeFindPanelAfterSearch": {
+      "order": 3,
       "type": "boolean",
       "default": false,
       "title": "Close Project Find Panel After Search",
       "description": "Close the find panel after executing a project-wide search."
     },
     "scrollToResultOnLiveSearch": {
+      "order": 4,
       "type": "boolean",
       "default": false,
       "title": "Scroll To Result On Live-Search (incremental find in buffer)",
       "description": "Scroll to and select the closest match while typing in the buffer find box."
     },
     "liveSearchMinimumCharacters": {
+      "order": 5,
       "type": "integer",
       "default": 3,
       "minimum": 0,
       "description": "The minimum number of characters which need to be typed into the buffer find box before search starts matching and highlighting matches as you type."
     },
     "searchContextLineCountBefore": {
+      "order": 6,
       "type": "integer",
       "default": 3,
       "minimum": 0,
       "description": "The number of extra lines of context to query before the match for project results"
     },
     "searchContextLineCountAfter": {
+      "order": 7,
       "type": "integer",
       "default": 3,
       "minimum": 0,
       "description": "The number of extra lines of context to query after the match for project results"
     },
     "showSearchWrapIcon": {
+      "order": 8,
       "type": "boolean",
       "default": true,
       "title": "Show Search Wrap Icon",
       "description": "Display a visual cue over the editor when looping through search results."
     },
     "useRipgrep": {
+      "order": 9,
       "type": "boolean",
-      "default": false,
+      "default": true,
       "title": "Use ripgrep",
       "description": "Use the experimental `ripgrep` search crawler. This will make searches substantially faster on large projects."
     },
     "enablePCRE2": {
+      "order": 10,
       "type": "boolean",
       "default": false,
       "title": "Enable PCRE2 regex engine",
       "description": "Enable PCRE2 regex engine (applies only to `ripgrep` search). This will enable additional regex features such as lookbehind, but may make searches slower."
     },
     "autocompleteSearches": {
+      "order": 11,
       "type": "boolean",
       "default": false,
       "title": "Autocomplete Search",
       "description": "Autocompletes entries in the find search field."
     },
     "preserveCaseOnReplace": {
+      "order": 12,
       "type": "boolean",
       "default": false,
       "title": "Preserve Case During Replace",
