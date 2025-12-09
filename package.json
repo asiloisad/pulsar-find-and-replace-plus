@@ -63,6 +63,12 @@
       "versions": {
         "0.0.1": "provideService"
       }
+    },
+    "atom.directory-searcher": {
+      "description": "Custom ripgrep directory searcher with multiline and CRLF support",
+      "versions": {
+        "0.1.0": "provideDirectorySearcher"
+      }
     }
   },
   "configSchema": {
