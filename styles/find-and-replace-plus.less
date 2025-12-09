@@ -243,11 +243,11 @@ atom-workspace.find-visible {
   padding: 0;
 
   .preview-header {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: (@component-padding / 2);
     align-items: center;
-    justify-content: space-between;
     overflow: hidden;
     font-weight: normal;
     border-bottom: 1px solid @panel-heading-border-color;
@@ -259,11 +259,20 @@ atom-workspace.find-visible {
   }
 
   .preview-controls {
+    position: absolute;
+    right: (@component-padding / 2);
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     .btn-group {
       margin: (@component-padding / 2);
     }
+  }
+
+  .context-controls {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .loading-spinner-tiny,
