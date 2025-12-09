@@ -20,6 +20,7 @@
       "find-and-replace:use-selection-as-replace-pattern",
       "find-and-replace:show-replace",
       "find-and-replace:replace-next",
+      "find-and-replace:replace-current",
       "find-and-replace:replace-all",
       "find-and-replace:select-next",
       "find-and-replace:select-all",
