@@ -63,6 +63,12 @@
   'tab': 'find-and-replace:focus-next'
   'shift-tab': 'find-and-replace:focus-previous'
 
+'.platform-darwin .find-and-replace, .platform-darwin .project-find':
+  'cmd-shift-x': 'find-and-replace:clear'
+
+'.platform-win32 .find-and-replace, .platform-win32 .project-find, .platform-linux .find-and-replace, .platform-linux .project-find':
+  'ctrl-shift-x': 'find-and-replace:clear'
+
 '.platform-darwin .find-and-replace .replace-container atom-text-editor':
   'cmd-enter': 'find-and-replace:replace-all'
 '.platform-darwin .project-find .replace-container atom-text-editor':
