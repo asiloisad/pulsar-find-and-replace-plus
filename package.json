@@ -27,7 +27,7 @@
       "find-and-replace:clear-history"
     ]
   },
-  "repository": "https://github.com/asiloisad/find-and-replace-plus",
+  "repository": "https://github.com/asiloisad/pulsar-find-and-replace-plus",
   "engines": {
     "atom": "*"
   },
