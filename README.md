@@ -30,6 +30,7 @@ To install `search-panel` run `ppm install asiloisad/pulsar-search-panel` to ins
 - Converted CoffeeScript to JavaScript.
 - Reworked result view component.
 - Reduced dependencies.
+- Option to clean editors on panel hide.
 
 ## Contributing
 
