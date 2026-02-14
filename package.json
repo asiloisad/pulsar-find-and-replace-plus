@@ -1,7 +1,7 @@
 {
   "name": "search-panel",
   "main": "./lib/find",
-  "description": "Find and replace within buffers and across the project.",
+  "description": "Find and replace in buffers and across the project",
   "version": "0.219.8",
   "license": "MIT",
   "activationCommands": {
